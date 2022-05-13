@@ -29,6 +29,13 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #549ffe;
 	line-height: 1;
 }
 ol, ul {
@@ -45,4 +52,48 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #549ffe;
+}
+
+.panel {
+    width: 100%;
+    max-width: 960px;
+    padding: 15px 25px;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 10px;
+    background-color: white;
+
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.pricing-plan {
+    border-bottom: 1px solid #e1f1ff;
+}
+
+.pricing-plan:last-child {
+    border-bottom: none;
+}
+
+.pricing-img {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 25px;
 }
